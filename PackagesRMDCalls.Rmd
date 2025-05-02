@@ -1,0 +1,52 @@
+---
+title: "PackagesRMDCall"
+author: "Devi Granec-Boydstun"
+date: "2025-05-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+devtools::load_all()
+```
+
+# Data
+## DDT
+```{r}
+data <- read.csv("./inst/extdata/DDT.csv")
+```
+
+# Packages
+
+## myboot2func
+```{r}
+PackagesTurnIn::myboot2Lab9(iter=10000,x = data$DDT, fun="mean",alpha=0.05)
+```
+
+
+
+## mycltp
+```{r}
+PackagesTurnIn::mycltp(n = 10, iter = 10000, lambda = 4)
+```
+
+
+## mycurve
+```{r}
+PackagesTurnIn::myncurve(6, 19, 13)
+```
+
+## mymlnorm
+```{r}
+PackagesTurnIn::mymlnormFunc(x = c(10, 11, 12, 13, 14, 15), mu = seq(10, 15, length = 1000), sig = seq(0.1, 4, length = 1000), lwd = 2, labcex = 1)
+```
+
+
+## ntickets
+```{r}
+PackagesTurnIn::ntickets(400, 0.02, 0.95)
+
+ntickets
+```
+

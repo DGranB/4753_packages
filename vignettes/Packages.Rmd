@@ -1,0 +1,25 @@
+---
+title: "Packages"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Packages}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(PackagesTurnIn)
+```
+
+
+# The Package Discription
+This package is used for compiling multiple R functions. To see them in use please refer to the the rmd file "PackagesRMDCalls" in the previous folder. 
+
+There are multiple functions, each has their own data and descriptions. Finally, there is one piece of data embedded in the package (DDT.csv).
